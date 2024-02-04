@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.header {
+    height: 70px;
+    padding: 0 10% ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+   
+    
+}
+.image-header {
+    width: 150px;
+    height: 25px;
+}
+.content-header {
+    display: flex;
+    
+}
+.content-header i {
+    margin-top: 7px;
+    padding: 0 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.content-header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #202002;
+    border-radius: 20px 20px 20px 20px;
+    height: 30px;
+    margin: 0 10px ;
+    padding: 0 5px ;
+    cursor: pointer;
+    color: #202002;
+    font-size: 15px
+}
+.user-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F4511E ;
+    border-radius: 50%;
+    color: white;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    font-size: 15px;
+}
+/* FINE HEADER */
+
+/* MAIN CONTENT */
+main {
+    height: 100vh;
+    
+
+}
+.main-content {
+    padding: 10% 10%;
+    height: 100vh;
+}
+
+.first-span {
+    display: inline;
+    color: gray;
+    font-weight: 500;
+}
+
+.second-span {
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    display: inline;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.horizzontal-line {
+    width: 60%;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #8080803b;
+}
+
+.linea-verticale {
+    border-left: 2px solid #8080803b;
+    height: 100vh;
+    position: fixed;
+    left: 60%;
+}
+
+/* inizio articolo */
+article {
+    margin-top: 10%;
+    width: 55%;
+    height: 30%;
+    display: flex;
+    cursor: pointer;
+}
+
+article h4 {
+    width: 70%;
+}
+
+.logo-credits {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    font-size: 15px;
+}
+.logo-credits img {
+    height: 25px;
+}
+
+.logo-credits span {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.text-article  {
+    padding-top: 5px;
+    color: gray;
+}
+
+.bottom-article {
+    padding-top: 35px;
+    color: gray;
+    font-size: 15px;
+}
+.bottom-article span { 
+   border-radius: 20px;
+   display: inline-block;
+   background-color: #8080802e;
+   width: 70px;
+   text-align: center;
+}
+
+.bottom-article div {
+    display: inline;
+   padding-left: 60px;
+}
+
+.bottom-article div i {
+    padding-right:10px ;
+}
+
+.main-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    padding-top: 25px;
+}
+/* FINE ARTICOLO */
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 30%;
+    height: 100vh;
+    border: 2px blue;
+    position: absolute;
+    left: 60%;
+    top: 11%;
+    
+}
+/* le due img con il + */
+.img-sidebar {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-sidebar img {
+    width: 40px;
+}
+/* la scritta sotto le due img */
+.follow-twitter {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.follow-twitter-span{
+    font-size: 18px;
+    max-width: 300px;
+    text-align: center;
+}
+/* Connect to Twitter */
+.button-twitter {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.button-twitter img {
+    width: 20px;
+}
+.Twitter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Twitter a {
+    padding-top: 10px;
+    font-size: 15px;
+    color: gray;
+}
+
+.sidebar-line {
+    border: 1px solid #8080803b;
+    max-width: 400px;
+    margin-left: 7%;
+    margin-top: 30px;
+}
+/* i topic raccomandati con i 7 bottoni grigi */
+.recommended-topics {
+    padding: 10% 10%;
+   
+}
+.recommended-topics span {
+    padding: 10px;
+    margin: 10px;
+    background-color: #8080802e;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.rec-topics-span {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* i 3 profili twitter */
+.twitter-profile {
+    padding: 5px 10% 5px 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.twitter-profile img {
+    width: 45px;
+    border-radius: 50%;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.description span {
+    color: gray;
+    font-size: 15px;
+}
+
+.twitter-profile-span span {
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.h5-follow {
+    padding-left: 9%;
+    padding-bottom: 20px;
+}
+/* le news sotto i profili twitter */
+.news {
+    padding: 0 10% 10% 10%;
+}
+.sidebar-news {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sidebar-news-top {
+    display: flex;
+    align-items: center;
+}
+.sidebar-news-top img {
+    width: 25px;
+    margin-right: 5px;
+}
+.sidebar-news-top{
+    font-size: 13px;
+    font-weight: bold;
+}
+.sidebar-news-top span {
+    color: gray;
+    padding: 0 5px 0 5px;
+}
+.sidebar-news-desc {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sidebar-news-date {
+    font-size: 12px;
+    color: gray;
+}
+.sidebar-news-date i {
+    padding-left: 10px;
+}
+.image-round {
+    border-radius: 50%;
+}
+.news-a {
+    padding-top: 20px;
+}
+.news-a a {
+    color: #248D20;
+    font-size: 15px;
+}
+.h5-space {
+    padding-top: 10% ;
+}
+/* le info in fondo alla sidebar */
+.info {
+    color: gray;
+    font-size: 15px;
+    padding: 10%;
+    min-width: 350px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info span {
+   padding: 5px 10px 5px 10px;
+}
